@@ -1456,15 +1456,6 @@ section {
   pointer-events: none;
 }
 
-.gallery-placeholder {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  font-weight: 700;
-}
-
 .gallery-card.s1 {
   width: min(78vw, 560px);
   height: min(46vh, 380px);
@@ -1480,34 +1471,12 @@ section {
   height: min(40vh, 320px);
 }
 
-.video-badge {
+.gallery-image {
   position: absolute;
-  z-index: 2;
-  top: 12px;
-  right: 12px;
-  border-radius: 99px;
-  padding: 4px 12px;
-  background: var(--signal);
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.gallery-placeholder.c0 {
-  background: repeating-linear-gradient(135deg, rgba(57, 255, 20, .13) 0 12px, var(--gallery-pattern-one) 12px 24px);
-}
-
-.gallery-placeholder.c1 {
-  background: radial-gradient(rgba(57, 255, 20, .22) 2px, transparent 2px), var(--gallery-pattern-two);
-  background-size: 22px 22px;
-}
-
-.gallery-placeholder.c2 {
-  background: repeating-linear-gradient(0deg, rgba(57, 255, 20, .14) 0 2px, transparent 2px 18px), var(--gallery-pattern-three);
-}
-
-.gallery-placeholder.c3 {
-  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, .18) 0 14px, transparent 14px 28px), var(--gallery-pattern-four);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery-bar {

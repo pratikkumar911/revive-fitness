@@ -13,10 +13,9 @@ export default function GallerySection({ galleryRef, galleryTrackRef, galleryPro
       <div className="gallery-sticky">
         <div className="gallery-head"><h2>Inside Revive</h2><p>Keep scrolling to walk the floor. Photos and clips are placeholders for now.</p></div>
         <div className="gallery-track" ref={galleryTrackRef}>
-          {GALLERY.map(([caption, size], index) => (
+          {GALLERY.map(([caption, size, image, alt]) => (
             <figure className={`gallery-card ${size}`} key={caption}>
-              <div className={`gallery-placeholder c${index % 4}`}>{index % 3 === 1 ? "Video clip" : "Photo"}</div>
-              {index % 3 === 1 && <span className="video-badge">▶ Video</span>}
+              <img className="gallery-image" src={image} alt={alt} />
               <figcaption>{caption}</figcaption>
             </figure>
           ))}

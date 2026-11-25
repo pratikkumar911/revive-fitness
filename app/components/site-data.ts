@@ -30,7 +30,7 @@ export const TIERS = [
   { name: "1 month", months: 1, price: 2000 },
   { name: "3 months", months: 3, price: 5500 },
   { name: "6 months", months: 6, price: 9000 },
-  { name: "12 months", months: 12, price: 15000 },
+  { name: "12 months", months: 12, price: 16000 },
 ] as const;
 
 export const EVENTS = [
@@ -41,26 +41,58 @@ export const EVENTS = [
 ] as const;
 
 export const GALLERY = [
-  ["Main floor", "s1"],
-  ["Squat racks in action", "s2"],
-  ["Cardio deck", "s3"],
-  ["Sled lane", "s2"],
-  ["Saturday morning crowd", "s1"],
-  ["Mobility zone", "s3"],
-  ["Free weights", "s2"],
-  ["Coaching a lift", "s3"],
-  ["Event night", "s1"],
+  ["Main floor", "s1", "/images/strength-training-area.webp", "Strength training area"],
+  ["Squat racks in action", "s2", "/images/dumbbell-weight-zone.webp", "Dumbbell and weight training zone"],
+  ["Cardio deck", "s3", "/images/cardio-deck.webp", "Cardio machines by the windows"],
+  ["Sled lane", "s2", "/images/hyrox-sled-zone.webp", "HYROX sled training zone"],
+  ["Saturday morning crowd", "s1", "/images/gym-entry-strength-area.webp", "Gym entry and strength area"],
+  ["Mobility zone", "s3", "/images/functional-training-zone.webp", "Functional and mobility training zone"],
+  ["Free weights", "s2", "/images/dumbbell-bench-rows.webp", "Dumbbell bench and free-weight area"],
+  ["Coaching a lift", "s3", "/images/cable-leg-training.webp", "Cable and leg-training machines"],
+  ["Event night", "s1", "/images/plate-loaded-machine-zone.webp", "Plate-loaded strength machines"],
 ] as const;
 
 export const GALLERY_END_GAP = 96;
 
 export const REVIEWS = [
-  ["Arjun M.","2 weeks ago","Came in not knowing how to squat. Three months later I’m lifting with confidence. The coaches actually watch your form."],
-  ["Priya S.","a month ago","Clean, never overcrowded, and the staff remember your name. Best gym I’ve joined."],
-  ["Rohan K.","a month ago","Did my HYROX prep here. The sled and rowing area is exactly what I needed."],
-  ["Sneha D.","2 months ago","The weekly check-ins kept me consistent and helped me feel stronger."],
-  ["Imran A.","2 months ago","24/7 access is a lifesaver with my shift timings. Always a rack free."],
-  ["Meera T.","3 months ago","The mobility corner fixed my back stiffness. Calm, friendly vibe."],
-  ["Vikram P.","3 months ago","Equipment is well maintained and the place is spotless."],
-  ["Anita R.","4 months ago","The tour sold me. No pushy sales, just straight answers."],
+  [
+    "shanta shalini Ekka",
+    "3 months ago",
+    "The gym has the perfect ambience to stay motivated and focused throughout every workout. The equipment is modern, well-maintained and has everything needed for effective training. The trainers are highly knowledgeable, supportive and always …"
+  ],
+  [
+    "Sushree Manasi Patel",
+    "a month ago",
+    "Hands down one of the best gym in the area! The equipment is top-tier, well-maintained, and never feels cluttered even during peak hours. The atmosphere is super motivating, and the trainers genuinely care about your progress. Whether …"
+  ],
+  [
+    "Thakit Sahu",
+    "2 months ago",
+    "I’ve been a member here for a few months, and I can honestly say it’s one of the best gyms I’ve ever joined. The facility is always spotless, and the equipment is modern and well-maintained. The trainers are both knowledgeable and …"
+  ],
+  [
+    "Rajat Sendriya",
+    "2 months ago",
+    "Brilliant environment for workout with exact guidance and surreal technique oriented equipment 💪… worth taking membership here💫"
+  ],
+  [
+    "Jignyasa Patel",
+    "3 months ago",
+    "Perfect gym... seems so perfect. Also, there are many new machines being set up for the ease of clients. All the trainers are really supportive.."
+  ],
+  [
+    "DIGVIJAY PATANKAR",
+    "2 months ago",
+    "Great gym with good equipment, clean environment, and a positive atmosphere. The staff are friendly and supportive."
+  ],
+  [
+    "Soumya Ranjan Pattnaik",
+    "2 months ago",
+    "Nice ambience with all highly mechanised equipment and hygiene with all the well experienced trainers and proper guidance. Worth every penny for sure😃"
+  ],
+  [
+    "Jay Deyy!!",
+    "3 months ago",
+    "Absolutely loved my experience here! The Zumba classes are energetic, fun, and motivating, making workouts feel exciting rather than tiring. The yoga sessions are peaceful and well-guided, helping with flexibility, relaxation, and overall …"
+  ]
 ] as const;
